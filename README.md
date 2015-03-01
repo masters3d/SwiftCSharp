@@ -81,10 +81,10 @@ Comparing Swift and C#
 
 | Collections    |        Swift        |         C#         |
 |----------------|:-------------------:|:------------------:|
-| dictionary     |      Dictionary     |   Dictionary<S,T>  |
+| dictionary     |      Dictionary     |   Dictionary\<S,T>  |
 | initialization | object  initializer | object initializer |
-| list           |        Array        |       List<T>      |
-| set            |         Set         |     HashSet<T>     |
+| list           |        Array        |       List\<T>      |
+| set            |         Set         |     HashSet\<T>     |
 
 | Math           |  Swift |         C#         |
 |----------------|:------:|:------------------:|
