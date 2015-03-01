@@ -91,13 +91,13 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 | list           |        Array        |       List\<T>      |
 | set            |         Set         |     HashSet\<T>     |
 
-| Math           |  Swift |         C#         |
-|----------------|:------:|:------------------:|
-| minimum        |   min  |   System.Math.Min  |
-| maximum        |   max  |   System.Math.Max  |
-| power          |   pow  |   System.Math.Pow  |
-| random numbers | random | System.Random.Next |
-| trigonometry   |   sin  |   System.Math.Sin  |
+| Math           |  Swift |         C#         |      C# (6)     |
+|----------------|:------:|:------------------:|:---------------:|
+| minimum        |   min  |   System.Math.Min  |       Min       | 
+| maximum        |   max  |   System.Math.Max  |       Max       |
+| power          |   pow  |   System.Math.Pow  |       Pow       |
+| random numbers | random | System.Random.Next |   Random.Next   |
+| trigonometry   |   sin  |   System.Math.Sin  |       Sin       |
 
 | Generics |       Swift       |         C#        |
 |----------|:-----------------:|:-----------------:|
