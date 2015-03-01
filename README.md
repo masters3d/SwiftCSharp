@@ -61,5 +61,47 @@ Comparing Swift and C#
 | type casting |    is, as, as?            |          cast, dynamic, as          |
 | type alias   |     typealias             |                using                |
 
+| Types        |    Swift    |        C#       |
+|--------------|:-----------:|:---------------:|
+| enumerations |     enum    |       enum      |
+| functions    | static func | (no equivalent) |
+| protocol     |   protocol  |    interface    |
+| struct       |    struct   |      struct     |
+
+| Functions       |    Swift    |        C#       |
+|-----------------|:-----------:|:---------------:|
+| anonymous       |   closures  |     lambdas     |
+| class method    |    static   |      static     |
+| method          |     func    |      method     |
+| overloaded      | overloading |   overloading   |
+| override        |   override  |     override    |
+| ref parameter   |   inout, &  |      ref, &     |
+| parameter array |    params   | parameter array |
+| return          |    return   |      return     |
+
+| Collections    |        Swift        |         C#         |
+|----------------|:-------------------:|:------------------:|
+| dictionary     |      Dictionary     |   Dictionary<S,T>  |
+| initialization | object  initializer | object initializer |
+| list           |        Array        |       List<T>      |
+| set            |         Set         |     HashSet<T>     |
+
+| Math           |  Swift |         C#         |
+|----------------|:------:|:------------------:|
+| minimum        |   min  |   System.Math.Min  |
+| maximum        |   max  |   System.Math.Max  |
+| power          |   pow  |   System.Math.Pow  |
+| random numbers | random | System.Random.Next |
+| trigonometry   |   sin  |   System.Math.Sin  |
+
+| Generics |       Swift       |         C#        |
+|----------|:-----------------:|:-----------------:|
+| function | generic functions | generic functions |
+| type     |   generic types   |   generic types   |
+
+
+
+
+
 
 
