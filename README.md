@@ -15,15 +15,9 @@ Comparing Swift and C#
 | Operators         | Swift                  |              C#             |
 |-------------------|:-------------------:|:---------------------------:|
 | arithmetic        | +, -, *, /, %       | +, -, *, /, %               |
-|                   |                     |                             |
 | assignment        | =                   | =                           |
-|                   |                     |                             |
 | bitwise           |<<, >>, &, \|, ~, ^, | <<, >>, <<=, >>= &, \|, ^, ~|
-|                   |                     |                             |
 | overflow          | &+, &-, &*, &/, &%  |        checked unchecked    |
-|                   |                     |                             |
 | overloading       | overloading         | overloading                 |
-|                   |                     |                             |
 | range             | a..<b, a…b          | (no equivalent)             |
-|                   |                     |                             |
 | relational        | ==, !=, >, <        | ==, !=, >, <                |
