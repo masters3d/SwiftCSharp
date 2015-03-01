@@ -12,3 +12,18 @@ Comparing Swift and C#
 | tuple       |      tuple     |     System.Tuple    |
 | string      | String (value) | string  (reference) |
 
+| Operators         | C#                  |              C#             |
+|-------------------|:-------------------:|:---------------------------:|
+| arithmetic        | +, -, *, /, %       | +, -, *, /, %               |
+|                   |                     |                             |
+| assignment        | =                   | =                           |
+|                   |                     |                             |
+| bitwise           |<p><<, >>, &, |, ~, ^,</p> | </p><<, >>, <<=, >>= &, |, ^, ~</p>|
+|                   |                     |                             |
+| overflow          | &+, &-, &*, &/, &%  |        checked unchecked    |
+|                   |                     |                             |
+| overloading       | overloading         | overloading                 |
+|                   |                     |                             |
+| range             | a..<b, a…b          | (no equivalent)             |
+|                   |                     |                             |
+| relational        | ==, !=, >, <        | ==, !=, >, <                |
