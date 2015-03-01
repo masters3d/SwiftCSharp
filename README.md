@@ -1,6 +1,9 @@
 # SwiftCSharp
 Comparing Swift and C#
 
+Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9A216CFB30A3/SwiftCSharpPoster.pdf
+
+
 | Variables   |      Swift     |          C#         |
 |-------------|:--------------:|:-------------------:|
 | boolean     |      Bool      |         bool        |
