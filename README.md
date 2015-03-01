@@ -46,5 +46,20 @@ Comparing Swift and C#
 | while            |        while        |       while      |
 | yield            |   (no equivalent)   |       yield      |
 
+| Classes      |       Swift               |                  C#                 |
+|--------------|:-------------------------:|:-----------------------------------:|
+| constructor  |       init                |             constructor             |
+| class        |       class               |                class                |
+| delegate     |  function types           |               delegate              |
+| destructor   |      deinit               |             destructor              |
+| extension    |     extension             |              extension              |
+| indexing     |     subscript             |               indexer               |
+| inheritance  |         :                 |                  :                  |
+| access       | private, internal, public | public, private, protected, interal |
+| object       |  AnyObject, Any           |                object               |
+| self         |       self                |                 this                |
+| type casting |    is, as, as?            |          cast, dynamic, as          |
+| type alias   |     typealias             |                using                |
+
 
 
