@@ -12,13 +12,13 @@ Comparing Swift and C#
 | tuple       |      tuple     |     System.Tuple    |
 | string      | String (value) | string  (reference) |
 
-| Operators         | C#                  |              C#             |
+| Operators         | Swift                  |              C#             |
 |-------------------|:-------------------:|:---------------------------:|
 | arithmetic        | +, -, *, /, %       | +, -, *, /, %               |
 |                   |                     |                             |
 | assignment        | =                   | =                           |
 |                   |                     |                             |
-| bitwise           |<p><<, >>, &, |, ~, ^,</p> | </p><<, >>, <<=, >>= &, |, ^, ~</p>|
+| bitwise           |<<, >>, &, \|, ~, ^, | <<, >>, <<=, >>= &, \|, ^, ~|
 |                   |                     |                             |
 | overflow          | &+, &-, &*, &/, &%  |        checked unchecked    |
 |                   |                     |                             |
