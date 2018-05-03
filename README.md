@@ -13,7 +13,8 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 | declaration |       var      |         var         |
 | float       |  Float, Double |    float, double    |
 | integer     |       Int      |         int         |
-| optional    |  ? (optional)  |     ? (nullable)    |
+| optional value type    |  ? (optional)  |     ? (nullable)    |
+| optional ref type    |  ? (optional)  |     [planned][ref nullable]     |
 | tuple       |      tuple     |     System.Tuple    |
 | string      | String (value) | string  (reference) |
 
@@ -55,13 +56,14 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 |--------------|:-------------------------:|:-----------------------------------:|
 | constructor  |       init                |             constructor             |
 | class        |       class               |                class                |
-| delegate     |  function types           |               delegate              |
+| partial class        |          (no equivalent)          |                partial class                |
+| delegate     |  function types, lambdas (swift calls them closures)           |               delegate, lambdas              |
 | destructor   |      deinit               |             destructor              |
-| extension    |     extension             |              extension              |
+| extension    |     extension (most types)             |              extension (only class but swift like [extension planned][extend everything] )              |
 | indexing     |     subscript             |               indexer               |
 | inheritance  |         :                 |                  :                  |
 | access       | private, fileprivate, internal, public, open | public, private, protected, interal |
-| object       |  AnyObject, Any           |                object               |
+| object       |  AnyObject (reference), Any (value)           |                object               |
 | self         |       self                |                 this                |
 | type casting |    is, as, as?            |         is, cast, dynamic, as          |
 | type alias   |     typealias (supports Generics)             |                using                |
@@ -69,7 +71,7 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 | Types        |    Swift    |        C#       |
 |--------------|:-----------:|:---------------:|
 | enumerations |     enum    |       enum      |
-| functions    | static func | (no equivalent) |
+| functions    | top level func | (no equivalent) maybe delegates |
 | protocol     |   protocol  |    interface    |
 | struct       |    struct   |      struct     |
 
@@ -86,10 +88,10 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 
 | Collections    |        Swift        |         C#         |
 |----------------|:-------------------:|:------------------:|
-| dictionary     |      Dictionary     |   Dictionary\<S,T>  |
+| dictionary     |      Dictionary<Key, Value>     |   Dictionary\<S,T>  |
 | initialization | object  initializer | object initializer |
-| list           |        Array        |       List\<T>      |
-| set            |         Set         |     HashSet\<T>     |
+| list           |        Array<T>        |       List\<T>      |
+| set            |         Set<T>         |     HashSet\<T>     |
 
 | Math           |  Swift |      C#     |
 |----------------|:------:|:---------------:|
@@ -111,6 +113,7 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 [swift compiler directives]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Statements.html#//apple_ref/doc/uid/TP40014097-CH33-ID538
 [swift diagnostic-directives]: https://github.com/apple/swift-evolution/blob/master/proposals/0196-diagnostic-directives.md
 [swift random]: https://github.com/apple/swift-evolution/blob/master/proposals/0202-random-unification.md
-
+[extend everything]: https://github.com/dotnet/csharplang/issues/192
+[ref nullable]: https://blogs.msdn.microsoft.com/dotnet/2017/11/15/nullable-reference-types-in-csharp/
 
 
