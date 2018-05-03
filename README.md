@@ -29,23 +29,23 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 
 | Programs                |             Swift            |               C#              |
 |-------------------------|:----------------------------:|:-----------------------------:|
-| attribute               |        (no equivalent)       |           attributes          |
+| attribute               |        Non user [definable attibutes][swift attributes]       |           User defined [attributes][csharp attributes]          |
 | memory management       | automatic reference counting | tree-based garbage collection |
 | module                  |            module            |            library            |
 | namespace               |        (no equivalent)       |           namespace           |
-| preprocessor directives |        (no equivalent)       |    preprocessor directives    |
+| preprocessor directives |        [compiler directives][swift compiler directives], [diagnostic-directives][swift diagnostic-directives]      |    preprocessor [directives][csharp pre processor]    |
 
 | Control flow     |        Swift        |        C#        |
 |------------------|:-------------------:|:----------------:|
 | break, continue  |   break, continue   |  break, continue |
-| do-while         |       do-while      |     do-while     |
+| do-while         |       repeat-while      |     do-while     |
 | for              |         for         |        for       |
 | for-in           |        for-in       |    foreach-in    |
 | if               |          if         |        if        |
 | locking          |   (no equivalent)   |       lock       |
 | queries          |   (no equivalent)   |       LINQ       |
 | switch           | switch, fallthrough |      switch      |
-| try-catch, throw |        assert       | try-catch, throw |
+| try-catch, throw |        assert, try-catch, throw       | try-catch, throw |
 | using            |   (no equivalent)   |       using      |
 | unsafe           |   (no equivalent)   |      unsafe      |
 | while            |        while        |       while      |
@@ -60,11 +60,11 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 | extension    |     extension             |              extension              |
 | indexing     |     subscript             |               indexer               |
 | inheritance  |         :                 |                  :                  |
-| access       | private, internal, public | public, private, protected, interal |
+| access       | private, fileprivate, internal, public, open | public, private, protected, interal |
 | object       |  AnyObject, Any           |                object               |
 | self         |       self                |                 this                |
-| type casting |    is, as, as?            |          cast, dynamic, as          |
-| type alias   |     typealias             |                using                |
+| type casting |    is, as, as?            |         is, cast, dynamic, as          |
+| type alias   |     typealias (supports Generics)             |                using                |
 
 | Types        |    Swift    |        C#       |
 |--------------|:-----------:|:---------------:|
@@ -81,7 +81,7 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 | overloaded      | overloading |   overloading   |
 | override        |   override  |     override    |
 | ref parameter   |   inout, &  |      ref, &     |
-| parameter array |    params   | parameter array |
+| parameter array |    params, T...   | parameter array |
 | return          |    return   |      return     |
 
 | Collections    |        Swift        |         C#         |
@@ -91,13 +91,13 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 | list           |        Array        |       List\<T>      |
 | set            |         Set         |     HashSet\<T>     |
 
-| Math           |  Swift |         C#         |      C# (6)     |
-|----------------|:------:|:------------------:|:---------------:|
-| minimum        |   min  |   System.Math.Min  |       Min       | 
-| maximum        |   max  |   System.Math.Max  |       Max       |
-| power          |   pow  |   System.Math.Pow  |       Pow       |
-| random numbers | random | System.Random.Next |   Random.Next   |
-| trigonometry   |   sin  |   System.Math.Sin  |       Sin       |
+| Math           |  Swift |      C#     |
+|----------------|:------:|:---------------:|
+| minimum        |   min  |       Min       | 
+| maximum        |   max  |       Max       |
+| power          |   pow  |       Pow       |
+| random numbers | [random][swift random]  |  Random.Next   |
+| trigonometry   |   sin  |       Sin       |
 
 | Generics |       Swift       |         C#        |
 |----------|:-----------------:|:-----------------:|
@@ -105,8 +105,12 @@ Reference http://download.microsoft.com/download/4/6/9/469501F4-5F6B-4E51-897C-9
 | type     |   generic types   |   generic types   |
 
 
-
-
+[swift attributes]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Attributes.html
+[csharp attributes]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/
+[csharp pre processor]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives/
+[swift compiler directives]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Statements.html#//apple_ref/doc/uid/TP40014097-CH33-ID538
+[swift diagnostic-directives]: https://github.com/apple/swift-evolution/blob/master/proposals/0196-diagnostic-directives.md
+[swift random]: https://github.com/apple/swift-evolution/blob/master/proposals/0202-random-unification.md
 
 
 
